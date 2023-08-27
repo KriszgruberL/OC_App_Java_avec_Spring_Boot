@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: api
+  h2:
+    console:
+      enabled: true
+server:
+  port: 9001
+
+logging:
+  level:
+    root: error
+    com :
+      openclassrooms : INFO
+    org :
+      springframework :
+        boot :
+          web :
+            embedded :
+              tomcat : INFO
+
+com :
+  openclassrooms :
+    webapp :
+      apiUrl : http://localhost:9000
